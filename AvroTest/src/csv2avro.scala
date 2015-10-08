@@ -43,7 +43,7 @@ object csv2avro {
   def main(args:Array[String]){
     println(args(0))
     val argHash = processArgs(args)
-    val (status,msg,avroFname) = CsvReader(argHash("input"),true).toAvro(argHash("schema"),argHash("output"))
+    val (status,msg,avroFname) = new CsvReader(argHash("input"),true).toAvro(argHash("schema"),argHash("output"))
   
     // Deserialize users from disk
     val file = new File(argHash("output"))
