@@ -2,6 +2,8 @@ package CsvReader
 
 /**
  * @author simonshapiro
+ * 
+ * This has been configured for github local
  */
 import scala.collection.mutable.ListBuffer
 import java.io.File
